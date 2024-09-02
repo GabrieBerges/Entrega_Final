@@ -1,0 +1,87 @@
+<h1>Lista de productos</h1>
+{{#if email}}
+    <p>Bienvenido, {{name}}!</p>
+    <form action="/api/user/logout" method="POST">
+        <button type="submit">Logout</button>
+        <button type="button" onclick="window.location.href='/chat'">Chat</button>
+        <button type="button" onclick="window.location.href='/api/sessions/current'">Perfil</button>
+        <button type="button" onclick="window.location.href='/api/carts/{{cart}}?email={{email}}'">Ver carrito</button>
+        {{#if isPremium}}
+            <button type="button" onclick="window.location.href='/realtimeproducts'">Administrar productos</button>
+        {{/if}}
+    </form>
+{{/if}}
+<div>
+    {{#each payload}}
+        <div class="card">
+            <h3> {{this.title}} </h3>
+            <p> {{this.description}} </p>
+            <p> {{this.category}} </p>
+            <p> {{this.code}} </p>
+            <p> {{this.price}} </p>
+            <form action="/api/carts/{{../cart}}/product/{{this._id}}" method="POST">
+                <!-- Campo oculto para la cantidad -->
+                <input type="hidden" name="quantity" id="quantityInput-{{this._id}}" value="1">
+                
+                <!-- Botón para decrementar la cantidad -->
+                <button type="button" onclick="decrementQuantity('{{this._id}}')">-</button>
+                
+                <!-- Mostrar la cantidad actual -->
+                <span id="currentQuantity-{{this._id}}">1</span>
+                
+                <!-- Botón para incrementar la cantidad -->
+                <button type="button" onclick="incrementQuantity('{{this._id}}')">+</button>
+                
+                <!-- Botón para agregar al carrito -->
+                <button type="submit">Agregar al carrito</button>
+            </form>
+        </div>
+    {{/each}}
+</div>
+
+{{!-- preguntamos si tiene alguna página previa --}}
+{{#if hasPrevPage}}
+    <a href="/products?page={{prevPage}}&limit={{limit}}"> Anterior </a>
+{{/if}}
+
+{{!-- preguntamos si tiene alguna página siguiente --}}
+{{#if hasNextPage}}
+    <a href="/products?page={{nextPage}}&limit={{limit}}"> Siguiente </a>
+{{/if}}
+
+{{!-- indicador de páginas --}}
+<p>Pagina {{page}} de {{totalPages}} </p>
+
+
+<script>
+    // Función para incrementar la cantidad
+    function incrementQuantity(id) {
+        const quantityInput = document.getElementById(`quantityInput-${id}`);
+        const currentQuantity = parseInt(quantityInput.value);
+        quantityInput.value = currentQuantity + 1;
+        document.getElementById(`currentQuantity-${id}`).textContent = quantityInput.value;
+    }
+
+    // Función para decrementar la cantidad
+    function decrementQuantity(id) {
+        const quantityInput = document.getElementById(`quantityInput-${id}`);
+        const currentQuantity = parseInt(quantityInput.value);
+        if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+            document.getElementById(`currentQuantity-${id}`).textContent = quantityInput.value;
+        }
+    }
+
+    // Función para manejar la respuesta después de agregar un producto al carrito
+    function handleAddToCartResponse() {
+        alert("Producto agregado al carrito");
+    }
+
+    // Verifica si hay un parámetro `added` en la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('added')) {
+        handleAddToCartResponse();
+    }
+    
+</script>
+

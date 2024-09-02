@@ -1,0 +1,37 @@
+<h1>Administración de productos</h1>
+<h2>Lista de productos</h2>
+
+{{#if email}}
+    <p>Bienvenido, {{name}}!</p>
+    <form action="/api/user/logout" method="POST">
+        <button type="submit">Logout</button>
+        <button type="button" onclick="window.location.href='/api/sessions/current'">Perfil</button>
+        {{#if (eq role "admin")}}
+            <button type="button" onclick="window.location.href='/api/user'">Usuarios</button>
+        {{/if}}
+    </form>
+    <input type="hidden" id="role" value="{{role}}">
+    <input type="hidden" id="email" value="{{email}}">
+{{/if}}
+
+<div id="contenedorProductos" class="contenedor"></div>
+
+<h2>Formulario para agregar productos</h2>
+
+<form class="form"> 
+    <input type="text" id="title" placeholder="Titulo">
+    <input type="text" id="description" placeholder="Descripcion">
+    <input type="number" id="price" placeholder="Precio">
+    <input type="text" id="code" placeholder="Código">
+    <input type="number" id="stock" placeholder="Stock">
+    <select id="status">
+        <option value="true"> Activo </option>
+        <option value="false"> Inactivo </option>
+    </select>
+    <input type="text" id="category" placeholder="Categoria">
+    <input type="text" id="thumbnail" value="Sin Imagen">
+    <button type="button" id="btnEnviar"> Enviar </button>
+</form>
+
+<script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+<script src="/js/main.js"></script>

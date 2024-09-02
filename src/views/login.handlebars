@@ -1,0 +1,26 @@
+<h1>Acceder</h1>
+{{#if success}}
+    <p style="color: green;">Se ha realizado con éxito!.</p>
+{{/if}}
+{{#if error}}
+    <p style="color: red; margin-left: 10px">{{error}}</p>
+{{/if}}
+<form action="/api/user/login" method="POST" class="form-session">
+    <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <div class="form-group-login">
+        <!-- Etiqueta vacía para alinear los botones -->
+        <button type="submit">Acceder</button>
+        <button type="button" onclick="window.location.href='/register'">Regístrate</button>
+        <button type="button" onclick="window.location.href='/api/user/github'">GitHub</button>
+        <p>Olvidé mi contraseña <a href="/reset-password"> Restablecer contraseña </a></p>
+    </div>
+</form>
+<script src="js/main.js"></script>
+

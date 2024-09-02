@@ -1,0 +1,231 @@
+paths:
+  /api/products:
+    get:
+      summary: Obtenemos todos los productos de la base de datos
+      tags:
+        - Products
+      responses:
+        "200":
+          description: Se obtienen todos los productos correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
+        "500":
+          description: Error interno del servidor
+    post:
+      summary: Este endpoint crea un producto
+      tags:
+        - Products
+      requestBody: 
+        required: true
+        content:
+            application/json:
+              schema:
+                $ref: "#/components/requestBodies/createProduct"
+      responses:
+        "201":
+          description: Producto creado correctamente
+        "500":
+          description: Error interno del servidor
+  /api/products/{pid}:
+    get:
+      summary: Obtenemos un producto por su ID
+      tags:
+        - Products
+      parameters:
+      - name: pid
+        in: path
+        require: true
+        description: id del producto que se quiere buscar
+      responses:
+        "200":
+          description: Se obtiene el producto correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
+        "500":
+          description: Error interno del servidor
+    put:
+      summary: Este endpoint modifica un producto
+      tags:
+        - Products
+      parameters:
+      - name: pid
+        in: path
+        require: true
+        description: id del producto que se quiere modificar
+        schema: 
+          type: string
+      requestBody: 
+        required: true
+        content:
+            application/json:
+              schema:
+                $ref: "#/components/requestBodies/updateProduct"
+      responses:
+        "201":
+          description: Producto modificado correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
+        "500":
+          description: Error interno del servidor
+    delete: 
+      summary: Este endpoint elimina un producto
+      tags:
+        - Products
+      parameters:
+      - name: pid
+        in: path
+        require: true
+        description: id del producto que se quiere eliminar
+        schema: 
+          type: string
+      responses:
+        "201":
+          description: Producto eliminado correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
+        "500":
+          description: Error interno del servidor
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: ID autogenerado por MongoDB
+        title:
+          type: string
+          description: Nombre del producto
+        description:
+          type: string
+          description: Descripción del producto
+        price:
+          type: number
+          description: Precio del producto
+        code:
+          type: string
+          description: Código del producto
+        stock:
+          type: number
+          description: Cantidad de unidades del producto
+        status:
+          type: boolean
+          description: Estado del producto
+        category:
+          type: string
+          description: Categpría del producto
+        thumbnail:
+          type: array
+          description: Imagen del producto
+        owner: 
+          type: string
+          description: Propietario creador del producto
+      example: 
+        _id: ObjectId("1234")
+        title: Producto 20
+        description: Descripción del Producto 20
+        price: 20.00
+        code: P20
+        stock: 100
+        status: Activo
+        category: Almacen
+        thumbnail: Sin imagen
+        owner: admin
+  requestBodies:
+    createProduct:
+      type: object
+      properties: 
+        title:
+          type: string
+          description: Nombre del producto
+        description:
+          type: string
+          description: Descripción del producto
+        price:
+          type: number
+          description: Precio del producto
+        code:
+          type: string
+          description: Código del producto
+        stock:
+          type: number
+          description: Cantidad de unidades del producto
+        status:
+          type: boolean
+          description: Estado del producto
+        category:
+          type: string
+          description: Categpría del producto
+        thumbnail:
+          type: array
+          description: Imagen del producto
+        owner: 
+          type: string
+          description: Propietario creador del producto
+      example: 
+        title: Producto 20
+        description: Descripción del Producto 20
+        price: 20.00
+        code: P20
+        stock: 100
+        status: Activo
+        category: Almacen
+        thumbnail: Sin imagen
+        owner: admin
+    updateProduct:
+      type: object
+      properties: 
+        title:
+          type: string
+          description: Nombre del producto
+        description:
+          type: string
+          description: Descripción del producto
+        price:
+          type: number
+          description: Precio del producto
+        code:
+          type: string
+          description: Código del producto
+        stock:
+          type: number
+          description: Cantidad de unidades del producto
+        status:
+          type: boolean
+          description: Estado del producto
+        category:
+          type: string
+          description: Categpría del producto
+        thumbnail:
+          type: array
+          description: Imagen del producto
+        owner: 
+          type: string
+          description: Propietario creador del producto
+      example: 
+        title: Producto 20 modificado
+        description: Descripción del Producto 20 modificada
+        price: 20.00
+        code: P20
+        stock: 200
+        status: true
+        category: Fiambrería
+        thumbnail: Sin imagen
+        owner: admin

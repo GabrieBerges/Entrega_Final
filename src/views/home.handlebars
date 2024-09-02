@@ -1,0 +1,36 @@
+<h1>Lista de productos</h1>
+
+<div>
+    {{#each payload}}
+        <div class="card">
+            <h3> {{this.title}} </h3>
+            <p> {{this.description}} </p>
+            <p> {{this.category}} </p>
+            <p> {{this.code}} </p>
+            <p> {{this.price}} </p>
+        </div>
+    {{/each}}
+</div>
+
+{{!-- preguntamos si tiene alguna página previa --}}
+{{#if hasPrevPage}}
+    {{#if sort}}
+        <a href="/?page={{nextPage}}&limit={{limit}}&sort={{sort}}&query={{query}}"> Anterior </a>
+    {{else}}
+        <a href="/?page={{prevPage}}&limit={{limit}}&query={{query}}"> Anterior </a>
+    {{/if}}
+{{/if}}
+
+{{!-- preguntamos si tiene alguna página siguiente --}}
+{{#if hasNextPage}}
+    {{#if sort}}
+        <a href="/?page={{nextPage}}&limit={{limit}}&sort={{sort}}&query={{query}}"> Siguiente </a>
+    {{else}}
+        <a href="/?page={{nextPage}}&limit={{limit}}&query={{query}}"> Siguiente </a>
+    {{/if}}
+{{/if}}
+
+{{!-- indicador de páginas --}}
+<p>Pagina {{currentPage}} de {{totalPages}} </p>
+
+<script src="js/main.js"></script>

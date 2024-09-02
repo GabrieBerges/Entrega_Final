@@ -1,0 +1,466 @@
+error: user.last_connection
+error: user.last_connection
+error: Wed Aug 07 2024 16:31:41 GMT-0300 (hora estándar de Argentina)
+error: req.user
+error: undefined
+error: req.user
+error: undefined
+error: user.last_connection
+error: Wed Aug 07 2024 16:37:14 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: undefined
+error: req.user
+error: undefined
+error: req.user
+error: undefined
+error: user.last_connection
+error: Wed Aug 07 2024 16:41:07 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: undefined
+error: req.session1
+error: [object Object]
+error: req.session2
+error: undefined
+error: user.last_connection
+error: Wed Aug 07 2024 16:42:09 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: undefined
+error: req.session1
+error: adminCoder@coder.com
+error: user.last_connection
+error: Wed Aug 07 2024 16:43:52 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: undefined
+error: req.session1
+error: adminCoder@coder.com
+error: user.last_connection
+error: Wed Aug 07 2024 16:45:35 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Wed Aug 07 2024 16:47:38 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Wed Aug 07 2024 16:51:01 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Wed Aug 07 2024 16:53:02 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Wed Aug 07 2024 16:54:39 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Wed Aug 07 2024 16:56:17 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Wed Aug 07 2024 16:58:05 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: undefined
+error: req.session1
+error: kh@coder.com
+error: kh@coder.com
+error: user
+error: {
+  _id: new ObjectId('664f695a22cfb9a8035fb493'),
+  first_name: 'kaasta',
+  last_name: 'henriquez',
+  email: 'kh@coder.com',
+  age: 26,
+  password: '$2b$10$8SoK0u1EvDRVDw05zDxA1ue/FlOVIHdI1UHNDzlnrXDA3CoBw6.5G',
+  cart: new ObjectId('664f695a22cfb9a8035fb491'),
+  role: 'usuario',
+  __v: 1,
+  documents: [],
+  last_connection: 2024-08-07T19:58:05.370Z
+}
+error: user.last_connection
+error: Wed Aug 07 2024 17:02:17 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Wed Aug 07 2024 17:04:57 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: undefined
+error: error en multer
+error: undefined
+error: error en multer
+error: undefined
+error: error en multer
+error: undefined
+error: Directory does not exist: C:\Users\silva\OneDrive\Documents\Curso BackEnd\DESAFIO-COMPL-E4\src\uploads\documents
+error: Directory does not exist: C:\Users\silva\OneDrive\Documents\Curso BackEnd\DESAFIO-COMPL-E4\src\uploads\products
+error: Directory does not exist: C:\Users\silva\OneDrive\Documents\Curso BackEnd\DESAFIO-COMPL-E4\src\uploads\profiles
+error: false
+error: false
+error: tabla-tiempos-verbales-ingles.pdf,arroz.png,perfil.png,Identificacion.pdf,Comprobante de estado de cuenta.pdf,Comprobante de domicilio.pdf
+error: false
+error: tabla-tiempos-verbales-ingles,arroz,perfil,Identificacion,Comprobante de estado de cuenta,Comprobante de domicilio
+error: true
+error: Error autenticando alcambiando el rol del usuario: Assignment to constant variable.
+TypeError: Assignment to constant variable.
+    at changeRole (C:\Users\silva\OneDrive\Documents\Curso BackEnd\DESAFIO-COMPL-E4\src\dao\controllers\UserManager.js:218:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error: tabla-tiempos-verbales-ingles,arroz,perfil,Identificacion,Comprobante de estado de cuenta,Comprobante de domicilio
+error: true
+error: Error autenticando alcambiando el rol del usuario: Assignment to constant variable.
+TypeError: Assignment to constant variable.
+    at changeRole (C:\Users\silva\OneDrive\Documents\Curso BackEnd\DESAFIO-COMPL-E4\src\dao\controllers\UserManager.js:218:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error: tabla-tiempos-verbales-ingles,arroz,perfil,Identificacion,Comprobante de estado de cuenta,Comprobante de domicilio
+error: true
+error: tabla-tiempos-verbales-ingles,arroz,perfil,Identificacion,Comprobante de estado de cuenta,Comprobante de domicilio
+error: true
+error: Identificacion,Comprobante de estado de cuenta
+error: false
+error: Identificacion,Comprobante de estado de cuenta
+error: false
+error: Identificacion,Comprobante de estado de cuenta
+error: false
+error: Identificacion,Comprobante de estado de cuenta
+error: false
+error: tabla-tiempos-verbales-ingles,arroz,perfil,Identificacion,Comprobante de estado de cuenta,Comprobante de domicilio
+error: true
+error: user.last_connection
+error: Thu Aug 08 2024 16:32:00 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Thu Aug 08 2024 16:35:09 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Thu Aug 08 2024 16:37:42 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Thu Aug 08 2024 16:39:06 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Thu Aug 08 2024 16:40:37 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Thu Aug 08 2024 16:41:38 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: undefined
+error: kh@coder.com
+error: kh@coder.com
+error: user.last_connection
+error: Thu Aug 08 2024 17:01:06 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: undefined
+error: user.last_connection
+error: Thu Aug 08 2024 17:03:46 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Tue Aug 27 2024 19:17:19 GMT-0300 (hora estándar de Argentina)
+error: Error durante el passport de github: E11000 duplicate key error collection: E-commerce.users index: email_1 dup key: { email: "gbergescoder@gmail.com" }
+MongoServerError: E11000 duplicate key error collection: E-commerce.users index: email_1 dup key: { email: "gbergescoder@gmail.com" }
+    at InsertOneOperation.execute (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongodb\lib\operations\execute_operation.js:136:16)
+    at async Collection.insertOne (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongodb\lib\collection.js:155:16)
+error: req.user-1
+error: gbergescoder@gmail.com
+error: gbergescoder@gmail.com
+error: user.last_connection
+error: Tue Aug 27 2024 19:47:15 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: cuca@lagrande.com
+error: cuca@lagrande.com
+error: user.last_connection
+error: Tue Aug 27 2024 19:48:22 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: peter@anguila.com
+error: peter@anguila.com
+error: user.last_connection
+error: Tue Aug 27 2024 19:53:42 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Tue Aug 27 2024 21:14:36 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Tue Aug 27 2024 21:17:07 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 08:55:21 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 09:02:32 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: req.user-1
+error: user.last_connection
+error: Sun Sep 01 2024 09:13:36 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 09:13:50 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 09:16:57 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 09:22:05 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 09:39:18 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 09:53:23 GMT-0300 (hora estándar de Argentina)
+error: Identificacion,Comprobante de estado de cuenta
+error: false
+error: Identificacion,Comprobante de estado de cuenta
+error: false
+error: user.last_connection
+error: Sun Sep 01 2024 10:00:48 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 10:18:53 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 10:21:47 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 10:29:32 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 10:36:28 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 10:54:46 GMT-0300 (hora estándar de Argentina)
+error: Error autenticando alcambiando el rol del usuario: Cast to ObjectId failed for value "${uid}" (type string) at path "_id" for model "users"
+CastError: Cast to ObjectId failed for value "${uid}" (type string) at path "_id" for model "users"
+    at SchemaObjectId.cast (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserRepository.getUserById (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\src\repositories\user.repository.js:32:26)
+error: user.last_connection
+error: Sun Sep 01 2024 11:06:24 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 11:18:07 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 11:18:23 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 11:20:33 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 11:23:01 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Sun Sep 01 2024 11:41:14 GMT-0300 (hora estándar de Argentina)
+error: Ha ocurrido un error creando el nuevo producto
+error: Ha ocurrido un error creando el nuevo producto
+error: Ha ocurrido un error creando el nuevo producto
+error: user.last_connection
+error: Sun Sep 01 2024 11:47:43 GMT-0300 (hora estándar de Argentina)
+error: Ha ocurrido un error creando el nuevo producto
+error: user.last_connection
+error: Sun Sep 01 2024 12:07:37 GMT-0300 (hora estándar de Argentina)
+error: Error: Error al intentar crear un producto
+Error: Error al intentar crear un producto
+    at CustomError.crearError (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\src\services\errors\custom-error.js:7:23)
+    at verifProduct (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\src\utils\util.js:14:31)
+    at Socket.<anonymous> (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\src\app.js:152:25)
+    at Socket.emit (node:events:519:28)
+    at Socket.emitUntyped (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\socket.io\dist\typed-events.js:69:22)
+    at C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\socket.io\dist\socket.js:704:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error: user.last_connection
+error: Sun Sep 01 2024 12:16:58 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:19:00 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:21:33 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:25:21 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:31:05 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:37:25 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:38:38 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:39:29 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:41:28 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: cuca@lagrande.com
+error: cuca@lagrande.com
+error: user.last_connection
+error: Sun Sep 01 2024 12:42:13 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:51:42 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 12:56:05 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 12:56:16 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 12:56:24 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Sun Sep 01 2024 13:04:41 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Sun Sep 01 2024 13:06:29 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: cuca@lagrande.com
+error: cuca@lagrande.com
+error: user.last_connection
+error: Sun Sep 01 2024 13:06:40 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 13:09:40 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Sun Sep 01 2024 13:11:55 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 13:14:22 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 18:00:42 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Sun Sep 01 2024 18:01:15 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 18:03:25 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 18:08:07 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Sun Sep 01 2024 18:17:34 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 18:17:46 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: cuca@lagrande.com
+error: cuca@lagrande.com
+error: user.last_connection
+error: Sun Sep 01 2024 18:17:59 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 18:19:14 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 18:20:01 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: cuca@lagrande.com
+error: cuca@lagrande.com
+error: user.last_connection
+error: Sun Sep 01 2024 18:20:58 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Sun Sep 01 2024 18:53:21 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 18:54:09 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 18:56:01 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 18:56:27 GMT-0300 (hora estándar de Argentina)
+error: Hubo un error en la conexión: querySrv ETIMEOUT _mongodb._tcp.cluster0.dcr0wh1.mongodb.net
+Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.dcr0wh1.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+error: Error durante el login: Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+error: Hubo un error en la conexión: querySrv ETIMEOUT _mongodb._tcp.cluster0.dcr0wh1.mongodb.net
+Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.dcr0wh1.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+error: user.last_connection
+error: Sun Sep 01 2024 19:25:19 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 19:26:07 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 19:27:33 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 19:28:26 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: cuca@lagrande.com
+error: cuca@lagrande.com
+error: user.last_connection
+error: Sun Sep 01 2024 19:29:02 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 19:29:02 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: cuca@lagrande.com
+error: cuca@lagrande.com
+error: user.last_connection
+error: Sun Sep 01 2024 19:29:09 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 19:33:10 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 19:41:24 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: profesilvanalandini@gmail.com
+error: profesilvanalandini@gmail.com
+error: user.last_connection
+error: Sun Sep 01 2024 19:42:37 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: user.last_connection
+error: Sun Sep 01 2024 19:46:16 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: profesilvanalandini@gmail.com
+error: profesilvanalandini@gmail.com
+error: user.last_connection
+error: Sun Sep 01 2024 19:48:16 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: adminCoder@coder.com
+error: adminCoder@coder.com
+error: user.last_connection
+error: Sun Sep 01 2024 19:51:01 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 19:56:29 GMT-0300 (hora estándar de Argentina)
+error: Error al agregar producto al carrito: rompete is not defined
+ReferenceError: rompete is not defined
+    at CartRepository.addProductToCart (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\src\repositories\cart.repository.js:81:13)
+    at CartManager.handleAddProductToCart (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\src\dao\controllers\CartManager.js:95:48)
+    at C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\src\routes\carts.router.js:21:79
+    at Layer.handle [as handle_request] (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\express\lib\router\route.js:149:13)
+    at checkSessionUser (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\src\middleware\current-session.js:24:9)
+    at Layer.handle [as handle_request] (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\node_modules\express\lib\router\layer.js:95:5)
+error: Error en handleAddProductToCart: Cannot read properties of undefined (reading 'products')
+TypeError: Cannot read properties of undefined (reading 'products')
+    at CartManager.handleAddProductToCart (C:\Users\silva\Documents\Curso BackEnd\ENTREGA FINAL\src\dao\controllers\CartManager.js:96:71)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error: user.last_connection
+error: Sun Sep 01 2024 19:59:00 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 20:08:54 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 20:12:17 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: profesilvanalandini@gmail.com
+error: profesilvanalandini@gmail.com
+error: user.last_connection
+error: Sun Sep 01 2024 20:16:11 GMT-0300 (hora estándar de Argentina)
+error: user.last_connection
+error: Sun Sep 01 2024 20:24:14 GMT-0300 (hora estándar de Argentina)
+error: req.user-1
+error: profesilvanalandini@gmail.com
+error: profesilvanalandini@gmail.com

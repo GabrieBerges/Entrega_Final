@@ -1,0 +1,4 @@
+//TODO:
+
+Finalizar las vistas pendientes para la realización de flujo completo de compra. 
+NO ES NECESARIO tener una estructura específica de vistas, sólo las que tú consideres necesarias para poder llevar a cabo el proceso de compra.

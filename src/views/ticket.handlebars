@@ -1,0 +1,23 @@
+<h1>Resumen de tu ticket</h1>
+
+<p>{{resume.status}}</p>
+
+<br>
+
+{{#if resume.ticket}}
+    <p>Código del ticket: {{resume.ticket.code}}</p>
+    <p>Fecha y hora de compra: {{resume.ticket.purchase_datetime}}</p>
+    <p>Valor total de la compra: {{resume.ticket.amount}}</p>
+    <p>Email de comprador: {{resume.ticket.purchaser}}</p>
+{{/if}}
+
+{{#if resume.productsId}}
+    <p>Los productos que no pudieron comprarse, aún estarán visibles en tu carrito.</p>
+    <p>{{resume.productsId}}</p>
+{{/if}}
+<form action='/api/carts/{{resume.cid}}?' class="form" method="GET">
+    <input type="hidden" name="email" value="{{resume.email}}">
+    <button type="submit">Volver al carrito</button>
+</form>
+
+<script src="js/main.js"></script>

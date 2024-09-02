@@ -1,0 +1,258 @@
+paths:
+  /api/carts:
+    post:
+      summary: Crea un nuevo carrito
+      tags:
+        - Carts
+      responses:
+        "201":
+          description: Carrito creado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Cart"
+        "500":
+          description: Error interno del servidor
+
+  /api/carts/{cid}:
+    get:
+      summary: Obtiene un carrito por su ID
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Carrito obtenido correctamente
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Cart"
+        "500":
+          description: Error interno del servidor
+
+    put:
+      summary: Reemplaza los productos de un carrito
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/requestBodies/replaceProducts"
+      responses:
+        "201":
+          description: Productos reemplazados correctamente
+        "500":
+          description: Error interno del servidor
+
+    delete:
+      summary: Vacía un carrito
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito
+          schema:
+            type: string
+      responses:
+        "201":
+          description: Carrito vaciado correctamente
+        "500":
+          description: Error interno del servidor
+
+  /api/carts/{cid}/products/{pid}:
+    post:
+      summary: Agrega un producto a un carrito
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito
+          schema:
+            type: string
+        - name: pid
+          in: path
+          required: true
+          description: ID del producto
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/requestBodies/addProduct"
+      responses:
+        "201":
+          description: Producto agregado al carrito correctamente
+        "500":
+          description: Error interno del servidor
+
+    put:
+      summary: Actualiza la cantidad de un producto en un carrito
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito
+          schema:
+            type: string
+        - name: pid
+          in: path
+          required: true
+          description: ID del producto
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/requestBodies/updateProductQuantity"
+      responses:
+        "201":
+          description: Producto actualizado correctamente
+        "500":
+          description: Error interno del servidor
+
+    delete:
+      summary: Elimina un producto de un carrito
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito
+          schema:
+            type: string
+        - name: pid
+          in: path
+          required: true
+          description: ID del producto
+          schema:
+            type: string
+      responses:
+        "201":
+          description: Producto eliminado del carrito correctamente
+        "500":
+          description: Error interno del servidor
+
+  /api/carts/{cid}/purchase:
+    get:
+      summary: Registra la compra y genera un ticket
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: ID del carrito
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Compra registrada y ticket generado
+        "500":
+          description: Error interno del servidor
+
+components:
+  schemas:
+    Cart:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: ID autogenerado del carrito
+        products:
+          type: array
+          items:
+            type: object
+            properties:
+              product:
+                $ref: "#/components/schemas/Product"
+              quantity:
+                type: integer
+                description: Cantidad de productos
+      example:
+        _id: "60d21b96747ae3d3c31d4567"
+        products:
+          - product:
+              _id: "60d21b96747ae3d3c31d4568"
+              title: "Producto 1"
+              description: "Descripción del Producto 1"
+              price: 100.00
+              code: "P1"
+              stock: 10
+              status: true
+              category: "Categoría 1"
+              thumbnail: ["imagen1.png"]
+              owner: "admin"
+            quantity: 2
+
+  requestBodies:
+    addProduct:
+      type: object
+      properties:
+        quantity:
+          type: integer
+          description: Cantidad de productos
+      example:
+        quantity: 2
+
+    replaceProducts:
+      type: object
+      properties:
+        products:
+          type: array
+          items:
+            type: object
+            properties:
+              product:
+                type: string
+                description: ID del producto
+              quantity:
+                type: integer
+                description: Cantidad de productos
+      example:
+        products:
+          - product: "60d21b96747ae3d3c31d4568"
+            quantity: 2
+
+    updateProductQuantity:
+      type: object
+      properties:
+        quantity:
+          type: integer
+          description: Cantidad de productos
+      example:
+        quantity: 3
+
+    purchase:
+      type: object
+      properties:
+        purchase:
+          type: boolean
+          description: Confirmación de compra
+      example:
+        purchase: true

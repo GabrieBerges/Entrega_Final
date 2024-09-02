@@ -1,0 +1,109 @@
+<h1 style="color: rgb(5, 67, 5)">Lista de usuarios</h1>
+<br>
+
+<form class="form" action="/api/products" method="GET"> 
+    <button type="button" style="background-color: #4577dc; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;" onclick="goBack()"> Volver </button>
+    <button type="button" style="background-color: #4577dc; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;" onclick="deleteInactiveUsers()"> Eliminar usuarios inactivos </button>
+</form>
+<br>
+
+<div id="error-message" style="color: red;"></div>
+
+<div>
+    {{#each payload}}
+        <div class="card" style="border: 2px solid black; padding: 20px; margin: 10px; width: 300px; background-color: #f2f2f2; border-radius: 5px;" data-uid="{{this._id}}" data-last-connection="{{this.last_connection}}">
+            <h3> {{this.name}} </h3>
+            <p> {{this.email}} </p>
+            <p id="role-{{this._id}}"> {{this.role}} </p>
+            
+            <form onsubmit="return changeRol('{{this._id}}')">
+                <button type="button" style="background-color: #4577dc; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;" onclick="changeRole('{{this._id}}')">Modificar rol</button>
+                <button type="button" style="background-color: #4577dc; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;" onclick="deleteUser('{{this._id}}')">Eliminar</button>
+            </form>
+        </div>
+    {{/each}}
+</div>
+
+<br>
+<br>
+
+<script>
+    function deleteInactiveUsers() {
+        fetch('/api/user/', {
+            method: 'DELETE'
+        })
+        .then(response => response.text()) // Cambia a text para manejar la respuesta como string
+        .then(message => {
+            // Muestra el mensaje de éxito
+            alert(message);
+
+            // Remover las tarjetas de usuarios inactivos
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const lastConnection = new Date(card.getAttribute('data-last-connection'));
+                const now = new Date();
+                const twoDaysAgo = new Date(now.getTime() - 48 * 60 * 60 * 1000);
+
+                if (lastConnection < twoDaysAgo) {
+                    card.remove();
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+
+
+    function deleteUser(uid) {
+        console.info("en delete user del handlebar"); // Asegúrate de que esta línea se ejecute
+
+        fetch(`/api/user/deleteuser/${uid}`, {
+            method: 'DELETE'
+        })
+        .then(response => response.text()) // Cambia a text para manejar la respuesta como string
+        .then(message => {
+            // Muestra el mensaje de éxito
+            alert(message);
+
+            // Remueve la tarjeta del usuario eliminado
+            const card = document.querySelector(`.card[data-uid="${uid}"]`);
+            if (card) {
+                card.remove();
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+
+
+    function goBack() {
+        window.location.href = '/api/products';
+    }
+
+    function changeRole(uid) {
+        fetch(`/api/user/premium/${uid}`, {
+            method: 'PUT'
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.role) {
+                // Actualiza el rol en el handlebar
+                const roleElement = document.querySelector(`#role-${uid}`);
+                if (roleElement) {
+                    roleElement.textContent = data.role;
+                }
+                // Mmuestra el mensaje del cambio de rol
+                alert(`El rol del usuario ahora es ${data.role}`);
+            } else if (data.error) {
+                // Muestra el error en la interfaz
+                alert(`Error: ${data.error}`);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+    
+</script>
